@@ -68,7 +68,11 @@ Você pode usar a ISO 8859-1 ou caracteres Unicode tal como os identificadores �
 
 Alguns exemplos de nomes legais são Numeros_visitas, temp99, e _nome.
 
-1. Declaração de variáveis
+1. Declarando variáveis
+
+* Com a palavra chave var. Por exemplo, var x = 42. Esta sintaxe pode ser usada para declarar tanto variáveis locais como variáveis globais.
+* Por simples adição de valor. Por exemplo, x = 42. Isso declara uma variável global. Essa declaração gera um aviso de advertência no JavaScript. Você não deve usar essa variante.
+* Com a palavra chave let. Por exemplo, let y = 13. Essa sintaxe pode ser usada para declarar uma variável local de escopo de bloco. Veja escopo de variável abaixo.
 
 Em JavaScript, as variáveis são declaradas utilizando as palavras-chave var, let ou const, seguidas pelo nome da variável. Por exemplo:
 
@@ -125,6 +129,8 @@ Ao nomear variáveis em JavaScript, é importante seguir algumas boas práticas 
 * Utilize camel case para nomes compostos (exemplo: nomeCompleto).
 * Evite nomes genéricos ou abreviações que possam levar a ambiguidades.
 * Evite utilizar palavras reservadas da linguagem como nomes de variáveis.
+
+
 
 ### Primeiro Programa e Javascript
 
