@@ -357,3 +357,90 @@ switch (diaSemana) {
 }
 ````
 
+### Estrutura  de Repetição
+
+Executam um bloco de código repetidamente enquanto uma condição for verdadeira.
+
+#### for
+
+````js
+for (let i = 0; i < 5; i++) {
+    console.log(i);  // Saída: 0, 1, 2, 3, 4
+}
+````
+
+#### While
+
+````js
+let contador = 0;
+while (contador < 5) {
+    console.log(contador);
+    contador++;
+}
+````
+
+#### Do..While
+
+````js
+let numero = 0;
+do {
+    console.log(numero);
+    numero++;
+} while (numero < 5);
+````
+
+### Funções
+
+Permitem agrupar e reutilizar código. Podem receber parâmetros e retornar valores.
+
+````js
+function saudacao(nome) {
+    return "Olá, " + nome + "!";
+}
+
+console.log(saudacao("Pedro")); // Saída: "Olá, Pedro!"
+````
+
+### Arrays 
+
+Arrays são listas de valores.
+
+````js
+let frutas = ["maçã", "banana", "laranja"];
+frutas.push("uva");        // Adiciona ao final
+console.log(frutas[1]);     // Saída: "banana"
+frutas.pop();               // Remove o último elemento
+````
+
+### Objetos
+
+Objetos armazenam dados como pares chave: valor.
+
+````js
+let pessoa = {
+    nome: "João",
+    idade: 30,
+    cidade: "São Paulo"
+};
+
+console.log(pessoa.nome);   // Saída: "João"
+pessoa.idade = 31;          // Modifica o valor da propriedade
+````
+
+### Console Log
+
+Usado para imprimir mensagens no console do navegador ou ambiente de desenvolvimento.
+
+````js
+console.log("Hello, world!"); // Saída: "Hello, world!"
+````
+
+### alert, prompt e confirm
+
+Esses comandos são usados para interagir com o usuário.
+
+````js
+alert("Bem-vindo!");                  // Exibe uma mensagem de alerta
+let nomeUsuario = prompt("Qual é o seu nome?"); // Solicita um valor ao usuário
+let resposta = confirm("Você tem certeza?");    // Retorna `true` ou `false`
+````
