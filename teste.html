@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: yellow;
+        }
+    </style>
 </head>
 <body>
     <h1>Trocar cor</h1>
@@ -15,13 +20,15 @@
 
             function mudarCor() {
                 if (!corOriginal) {
-                    corOriginal = document.body.style.backgroundColor || "white"; // Guarda a cor original
+                    corOriginal = document.body.style.backgroundColor || "yellow"; // Guarda a cor original
                 }
     
-                if (document.body.style.backgroundColor === "Yellow") {
+                if (document.body.style.backgroundColor === "white") {
+                    document.body.style.color = "red";
                     document.body.style.backgroundColor = corOriginal; // Volta para a cor original
                 } else {
-                    document.body.style.backgroundColor = "Yellow"; // Muda para a nova cor
+                    document.body.style.backgroundColor = "white"; // Muda para a nova cor
+                    document.body.style.color = "blue";
                 }
             }
     </script>
